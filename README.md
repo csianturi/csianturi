@@ -1,4 +1,4 @@
-<h3 align="center">hi, i'm colin — welcome to my github</h3>
+<h3 align="center">👋😺hi, i'm colin welcome to my github!</h3>
 
 ```#include <stdint.h>
 
