@@ -1,16 +1,34 @@
-## Hi there 👋
+<h3 align="center">hi, i'm colin — welcome to my github</h3>
 
-<!--
-**csianturi/csianturi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```#include <stdint.h>
 
-Here are some ideas to get you started:
+enum state {
+    STATE_EAT,
+    STATE_DOOMSCROLL,
+    STATE_LARP
+};
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+struct soon_to_be_engineer {
+    const char *name;
+    const char *university;
+    const char *degree;
+    uint16_t graduation;
+    enum state current_state;
+    const char * const *interests;
+    const char * const *off_clock;
+};
+
+static const struct engineer colin = {
+    .name          = "Colin Sianturi",
+    .university    = "UC Irvine",
+    .degree        = "M.S. Computer Engineering",
+    .graduation    = 2027,
+    .current_state = STATE_LARP
+    .interests     = (const char * const []){
+        "Systems & Kernel Development",
+        "Computer Architecture & Hardware Acceleration",
+        "GPU Architecture & Real-Time Graphics", // IN PROGRESS
+        "Performance Engineering & Low-Latency Optimization", // IN PROGRESS
+        NULL
+    }
+};
