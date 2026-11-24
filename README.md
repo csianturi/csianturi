@@ -7,7 +7,7 @@ enum state {
     STATE_LARP
 };
 
-struct soon_to_be_engineer {
+struct AboutMe {
     const char *name;
     const char *university;
     const char *degree;
@@ -16,7 +16,7 @@ struct soon_to_be_engineer {
     const char * const *interests;
 };
 
-static const struct engineer colin = {
+static const struct AboutMe colin = {
     .name          = "Colin Sianturi",
     .university    = "UC Irvine",
     .degree        = "M.S. Computer Engineering",
