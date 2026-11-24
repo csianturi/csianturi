@@ -1,9 +1,6 @@
 <h3 align="center">👋🐱hi, im colin and welcome to my github!</h3>
 
 ```c
-
-#include <stdint.h>
-
 static const struct {
     const char *name;
     const char *education[2];
