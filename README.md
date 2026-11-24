@@ -1,11 +1,6 @@
 <h3 align="center">👋🐱hi, im colin and welcome to my github!</h3>
 
 ```c
-enum state {
-    STATE_EAT,
-    STATE_DOOMSCROLL,
-    STATE_LARP
-};
 
 struct about_me {
     const char *name;
@@ -21,7 +16,6 @@ static const struct about_me colin = {
     .university    = "UC Irvine",
     .degree        = "M.S. Computer Engineering",
     .graduation    = 2027,
-    .current_state = STATE_LARP
     .interests     = (const char * const []){
         "Systems & Kernel Development",
         "Computer Architecture & Hardware Acceleration",
