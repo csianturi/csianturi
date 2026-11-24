@@ -1,35 +1,34 @@
-```cpp
-#include <array>
-#include <cstdint>
-#include <string_view>
+<h3 align="center">👋🐱hi, im colin and welcome to my github!</h3>
 
-enum class State {
-    Compiling,
-    DebuggingDMA,
-    OnTheCourt
+```c
+enum state {
+    STATE_EAT,
+    STATE_DOOMSCROLL,
+    STATE_LARP
 };
 
-struct Engineer {
-    std::string_view name         = "Colin Sianturi";
-    std::string_view university   = "UC Irvine";
-    std::string_view degree       = "M.S. Computer Engineering";
-    std::uint16_t    graduation   = 2027;
-    std::string_view incomingRole = "Software Engineer II @ Raytheon";
-    State            status       = State::DebuggingDMA; // usually a missing memory barrier
+struct soon_to_be_engineer {
+    const char *name;
+    const char *university;
+    const char *degree;
+    uint16_t graduation;
+    enum state current_state;
+    const char * const *interests;
+    const char * const *off_clock;
+};
 
-    std::array<std::string_view, 4> interests = {
+static const struct engineer colin = {
+    .name          = "Colin Sianturi",
+    .university    = "UC Irvine",
+    .degree        = "M.S. Computer Engineering",
+    .graduation    = 2027,
+    .current_state = STATE_LARP
+    .interests     = (const char * const []){
         "Systems & Kernel Development",
         "Computer Architecture & Hardware Acceleration",
-        "GPU Architecture & Real-Time Graphics",
-        "Performance Engineering & Low-Latency Optimization"
-    };
-
-    std::array<std::string_view, 3> offClock = {
-        "Pickup Basketball (mid-range pull-ups only)",
-        "Boxing & Lifting",
-        "Competitive FPS / Fighting Games"
-    };
+        "GPU Architecture & Real-Time Graphics", // IN PROGRESS
+        "Performance Engineering & Low-Latency Optimization", // IN PROGRESS
+        NULL
+    }
 };
-
-inline constexpr Engineer colin{};
 ```
