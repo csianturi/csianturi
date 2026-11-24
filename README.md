@@ -14,7 +14,6 @@ struct soon_to_be_engineer {
     uint16_t graduation;
     enum state current_state;
     const char * const *interests;
-    const char * const *off_clock;
 };
 
 static const struct engineer colin = {
